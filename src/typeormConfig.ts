@@ -8,6 +8,7 @@ export const typeormConfig = new DataSource({
   database: database_data.database,
   username: database_data.username,
   password: database_data.passwors,
+  url: 'postgresql://postgres:ISqeqiOlusoTMECbakjhlDUDMCuEByJq@postgres.railway.internal:5432/railway',
   logging: true,
   synchronize: true,
   migrations: [path.join(__dirname, "./migrations/*")],
